@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/food1.png">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>FONDITAS</title>
+</head>
+<body>
+
+    <!-- scroll top -->
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- cursor -->
+    <div class="cursor"></div>
+
+    <!-- HEADER  -->
+    <header>
+        <div class="container">
+            <nav class="show">
+                <div data-aos="fade-down" class="row align-items-center py-2">
+                    <div class="col-lg-3 col-md-2 col-sm-2 col-xs-6">
+                        <h1 class="logo fw-bold text-white">Fonditas</h1>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-5">
+                        <ul class="list">
+                            <li>
+                                <a href="#Nosotros">Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#Fondas">Fonditas</a>
+                            </li>
+                            <li>
+                                <a href="#Mapa">Mapa</a>
+                            </li>
+                            <li>
+                                <a href="#Insicbrise">Insicbrise</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <button>Insia sesion</button>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                        <i class="fa-solid fa-shopping-cart shopping-cart-icon"></i>
+                    </div>
+                    <div class="col-sm-1 col-xs-6">
+                        <div class="mx-4 hamburger" onclick="openList()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-mobile">
+                    <i class="fa-solid fa-xmark" onclick="closeList()" data-aos="fade-left"></i>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="1800">
+                            <a href="#Nosotros">Nosotros</a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1800">
+                            <a href="#Fondas">Fonditas</a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1800">
+                            <a href="#Mapa">Mapa</a>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="1800">
+                            <a href="#Insicbrise">Insicbrise</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="landing">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="left">
+                            <h2 data-aos="fade-right" data-aos-duration="1000">De tu fonda favorita</h2>
+                            <h1 data-aos="fade-right" data-aos-duration="1500" class="lg-lg text-white my-1 fw-bold">La comida que <br> ya conoces <br> al mejor precio</h1>
+                            <div class="search" data-aos="fade-right" data-aos-duration="2000">
+                                <input type="text" placeholder="Busca tu platillo favorito">
+                                <button>Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-12">
+                        <div class="right ms-5 position-relative">
+                            <div class="pointer-img">
+                                <img src="./images/Combined Shape.png" alt="">
+                                <img src="./images/Combined Shape.png" alt="">
+                            </div>
+                            <div class="img1" data-aos="fade-left">
+                                <img src="/images/food3.png" alt="">
+                            </div>
+                            <div class="img2" onmousemove="animateImage(e)" data-aos="fade-left" data-aos-duration="1500">
+                                <img src="/images/food1.png" alt="">
+                            </div>
+                            <div class="img3" data-aos="fade-up" data-aos-duration="2000">
+                                <img src="/images/food2.png" alt="">
+                            </div>
+                            <div class="img4" data-aos="fade-left" data-aos-duration="1500">
+                                <img src="/images/pin.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons" data-aos="fade-up">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER  -->
+
+    <!-- NOSOTROS  -->
+    <section class="nosotros" id="Nosotros">
+        <button class="categoria mx-auto green-button">CATEGORIAS</button>
+        <h1 class="text-center title">Las Favoritas</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up">
+                        <div class="img">
+                            <div class="num">42</div>
+                            <img src="/images/pizza-1.png" alt="">
+                        </div>
+                        <h4>Pizza</h4>
+                        <p>Desde $60</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="img">
+                            <div class="num">22</div>
+                            <img src="/images/sushi.png" alt="">
+                        </div>
+                        <h4>Sushi</h4>
+                        <p>Desde $50</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1300">
+                        <div class="img">
+                            <div class="num">48</div>
+                            <img src="/images/hamburger.png" alt="">
+                        </div>
+                        <h4>hamburger</h4>
+                        <p>Desde $20</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="img">
+                            <div class="num">15</div>
+                            <img src="/images/watermelon.png" alt="">
+                        </div>
+                        <h4>veggie</h4>
+                        <p>Desde $30</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="img">
+                            <div class="num">12</div>
+                            <img src="/images/noodle.png" alt="">
+                        </div>
+                        <h4>noodle</h4>
+                        <p>Desde $80</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1600">
+                        <div class="img">
+                            <div class="num">32</div>
+                            <img src="/images/cake.png" alt="">
+                        </div>
+                        <h4>cake</h4>
+                        <p>Desde $10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NOSOTROS  -->
+
+    <!-- FONDAS  -->
+    <section class="fondas" id="Fondas">
+        <div class="container">
+            <button class="green-button" data-aos="fade-right">fonditas</button>
+            <h1 class="title" data-aos="fade-right">Fondas cercanas</h1>
+            <p data-aos="fade-right">‘Estás son las fondas que se encuentran cerca!</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-star star">9.8</i>
+                        <img src="/images/Rectangle (1).png" class="img-fluid" alt="">
+                        <h2>Dona Laura</h2>
+                        <div class="time">
+                            <p>20-30min</p>
+                            <span>Fonditas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-star star">6.6</i>
+                        <img src="/images/Rectangle (2).png" class="img-fluid" alt="">
+                        <h2>Rosa Cafe</h2>
+                        <div class="time">
+                            <p>45min</p>
+                            <span>oncherie</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-star star">5.2</i>
+                        <img src="/images/Rectangle (3).png" class="img-fluid" alt="">
+                        <h2>Le contidience</h2>
+                        <div class="time">
+                            <p>15-30min</p>
+                            <span>Fonditas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="card" data-aos="fade-up">
+                        <i class="fa-solid fa-star star">3.1</i>
+                        <img src="/images/Rectangle.png" class="img-fluid" alt="">
+                        <h2>Querequee</h2>
+                        <div class="time">
+                            <p>10-30min</p>
+                            <span>Fonditas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FONDAS  -->
+
+    <!-- TECH -->
+    <section class="tech">
+        <div class="pattern1-img">
+            <img src="/images/pattern (1).png" alt="">
+        </div>
+        <div class="pattern2-img">
+            <img src="/images/pattern.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="left" data-aos="fade-right">
+                        <img src="/images/tech.jpg" class="tech-img" alt="">
+                        <img src="/images/filter.png" class="filter-img" alt="">
+                        <img src="/images/map.png" class="map-img" alt="">
+                        <img src="/images/Combined Shape2.png" class="point-img" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="right" data-aos="fade-left">
+                        <button class="green-button">Mapa</button>
+                        <h1 class="title">Encuentra en <br> el mapa las mejores fondas</h1>
+                        <p>Encuentra las fondas cercanas por sí quieres hacer pick up directo en las tiendas.</p>
+                        <div class="row aling-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="input">
+                                    <input type="text" placeholder="tu codigo, postal">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <button class="btn-right">Buscar en mapa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TECH -->
+
+    <!-- MAPA -->
+    <section class="mapa" id="Mapa">
+        <div class="container">
+            <button class="green-button">Fonditas</button>
+            <h1 class="title">Los mejores menus</h1>
+            <p>Aquí están los mejores menús de la semana, y decide que vas a pedir</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" data-aos="fade-right">
+                        <div class="left-card">
+                            <button class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <span>9.8</span>
+                            </button>
+                            <img src="/images/Rectangle (4).png" alt="">    
+                        </div>
+                        <div class="right-card">
+                            <h2>Hot cakes</h2>
+                            <h1 class="fw-bold mt-4">Hot caketerias</h1>
+                            <p>include dos toppics</p>
+                            <div class="min d-flex justify-content-between">
+                                <span>20-30 min</span>
+                                <span>Desde $70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" data-aos="fade-left">
+                        <div class="left-card">
+                            <button class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <span>9.3</span>
+                            </button>
+                            <img src="/images/Rectangle (5).png" alt="">    
+                        </div>
+                        <div class="right-card">
+                            <h2>Pastish</h2>
+                            <h1 class="fw-bold">Hot caketerias</h1>
+                            <p>include dos toppics</p>
+                            <div class="min d-flex justify-content-between">
+                                <span>10-20 min</span>
+                                <span>Desde $50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" data-aos="fade-right">
+                        <div class="left-card">
+                            <button class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <span>1.1</span>
+                            </button>
+                            <img src="/images/Rectangle (6).png" alt="">    
+                        </div>
+                        <div class="right-card">
+                            <h2>Otros desayunos</h2>
+                            <h1 class="fw-bold mt-4">Hot caketerias</h1>
+                            <p>include dos toppics</p>
+                            <div class="min d-flex justify-content-between">
+                                <span>20-30 min</span>
+                                <span>Desde $20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" data-aos="fade-left">
+                        <div class="left-card">
+                            <button class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <span>9.8</span>
+                            </button>
+                            <img src="/images/Rectangle (8).png" alt="">    
+                        </div>
+                        <div class="right-card">
+                            <h2>Desayunos</h2>
+                            <h1 class="fw-bold mt-4">Hot caketerias</h1>
+                            <p>include dos toppics</p>
+                            <div class="min d-flex justify-content-between">
+                                <span>10-20 min</span>
+                                <span>Desde $10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" data-aos="fade-right">
+                        <div class="left-card">
+                            <button class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <span>9.4</span>
+                            </button>
+                            <img src="/images/Rectangle (9).png" alt="">    
+                        </div>
+                        <div class="right-card">
+                            <h2>Ensaladish</h2>
+                            <h1 class="fw-bold mt-4">Hot caketerias</h1>
+                            <p>include dos toppics</p>
+                            <div class="min d-flex justify-content-between">
+                                <span>25-30 min</span>
+                                <span>Desde $30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card" data-aos="fade-left">
+                        <div class="left-card">
+                            <button class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <span>8</span>
+                            </button>
+                            <img src="/images/Rectangle.png" alt="">    
+                        </div>
+                        <div class="right-card">
+                            <h2>Pizzería</h2>
+                            <h1 class="fw-bold mt-4">Hot caketerias</h1>
+                            <p>include dos toppics</p>
+                            <div class="min d-flex justify-content-between">
+                                <span>20-30 min</span>
+                                <span>Desde $50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAPA -->
+
+    <!-- PHONE  -->
+    <section class="phone">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h1>Es tiempo de <br> ayudarnos, <br> ¿Te unes?</h1>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="/images/Combined Shape.png" class="point" alt="">
+                    <img src="/images/iphone.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PHONE  -->
+
+    <!-- FOOTER  -->
+    <footer id="Insicbrise">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h1>¿Te apasiona ayudar a tu comunidad?</h1>
+                    <h2 class="title-footer">Fonditas</h2>
+                    <div class="social-icons" data-aos="fade-up">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <li class="menu">MENU</li>
+                    <ul>
+                        <li>Nosotros</li>
+                        <li>Fonditas</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mapa">
+                        <li>Mapa</li>
+                        <li>Supir</li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sub">
+                        <li>Subscribe</li>
+                        <input type="email" placeholder="tu e-email">
+                    </div>
+                </div>
+    
+            </div>
+
+            <hr>
+
+            <div class="icons-pay"></div>
+        </div>
+    </footer>
+    <!-- FOOTER  -->
+    
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- AOS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: "false",
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
