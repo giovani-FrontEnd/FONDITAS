@@ -581,7 +581,7 @@ header .list-mobile ul li a{
 }
 .mapa .card img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .mapa .card .right-card{
     padding: 20px;
@@ -682,9 +682,6 @@ footer .sub input{
 
 
 
-
-
-
 @media (max-width: 768px) {
     .title{
         font-size: 50px;
@@ -711,8 +708,8 @@ footer .sub input{
     header .hamburger{
         display: flex;
         position: absolute;
-        right: -50%;
-        top: 16%;
+        right: -60%;
+        top: 17%;
     }
     header .landing .left{
         text-align: center;
