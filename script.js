@@ -26,6 +26,11 @@ document.onscroll = () => {
     } else{
         scrollTopIcon.classList.remove('active');
     }
+    if(window.scrollY > 550) {
+        document.querySelector('nav').classList.add('show')
+    } else{
+        document.querySelector('nav').classList.remove('show')
+    }
 }
 
 scrollTopIcon.onclick = () => {
@@ -43,16 +48,6 @@ listMobiles.forEach(list => {
     }
 })
 
-function navShow() {
-    document.onscroll = () => {
-        if(window.scrollY > 550) {
-            document.querySelector('nav').classList.add('show')
-        } else{
-            document.querySelector('nav').classList.remove('show')
-        }
-    }
-}
-navShow();
 
 let tech = document.querySelector('.tech .left');
 

@@ -77,7 +77,6 @@ li{
     border-radius: 50%;
     line-height: 50px;
     background-color: var(--button-color);
-    /* cursor: pointer; */
     text-align: center;
     z-index: 99;
 }
